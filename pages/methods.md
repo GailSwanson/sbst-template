@@ -8,7 +8,7 @@ permalink: "/methods/"
 
 # Methods to the Madness
 
-Yo!
+Some background text can go right here
 
 ## Section 1
 
@@ -23,13 +23,3 @@ Some next, well developed content would go here.
 Some next, well developed content would go here.
 
 ## Section 4
-
-Some next, well developed content would go here.
-
-## Section 5
-
-Some next, well developed content would go here.
-
-## Section 6
-
-Some next, well developed content would go here.
