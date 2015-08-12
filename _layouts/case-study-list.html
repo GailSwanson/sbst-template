@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<ul class="case-studies">
+  {% assign pages = site.pages | sort:"date" | reverse %}
+  {% for page in pages %}
+    {% if page.layout == 'case-study' %}
+    <li>
+      <div class="usa-width-one-whole usa-end-row">
+        <h2>{{ page.title }}</h2>
+        <div class="case-study-content">{{ page.content | markdownify }}</div>
+      </div>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
