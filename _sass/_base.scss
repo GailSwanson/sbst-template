@@ -1,0 +1,30 @@
+.hero-unit {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30em;
+  margin-top: 2em;
+}
+.hero-content {
+  background-color: lightslategray;
+  padding: 1.2em;
+  text-align: center;
+}
+ul li:before {
+  content: ""
+}
+.case-studies {
+  list-style-type: none;
+}
+.case-studies li {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  list-style-type: none;
+}
+.case-studies li h1 {
+  font-size: 1em;
+}
+.case-study-content {
+  padding-left: 2em;
+}

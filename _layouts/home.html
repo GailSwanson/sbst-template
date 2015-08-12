@@ -1,0 +1,36 @@
+---
+layout: base
+---
+
+<div class="usa-grid">
+  <div class="hero-unit" style="background-image: url('{{ page.hero-image }}')">
+    <div class="usa-width-one-sixth"></div>
+    <div class="usa-width-two-thirds hero-content">
+      <h1>{{ page.hero-text }}</h1>
+      <button class="usa-button-outlined usa-button-big" onClick="onHeroButtonClick()">{{ page.hero-button-text }}</button>
+    </div>
+    <div class="usa-width-one-sixth usa-end-row"></div>
+  </div>
+  <div class="usa-width-one-whole usa-end-row">
+    {{ content }}
+  </div>
+  <ul class="case-studies">
+    {% assign pages = site.pages | sort:"date" | reverse %}
+    {% for page in pages | limit: 2 %}
+      {% if page.layout == 'case-study' %}
+      <li>
+        <div class="usa-width-one-whole usa-end-row">
+          <h2>{{ page.title }}</h2>
+          <div class="case-study-content">{{ page.content | markdownify }}</div>
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<script>  /*  Using an event handler until .usa-button also works with <a>  */
+  function onHeroButtonClick() {
+    document.location.href = '{{ page.hero-button-link }}';
+  }
+</script>

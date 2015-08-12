@@ -1,0 +1,27 @@
+<header role="banner">
+  <div class="disclaimer">
+    <span class="us-official">
+      An official website of the United States Government.
+      <!-- <img
+      alt="US flag signifying that this is a United States Federal Government website"
+      src="/govt-wide-patternlibrary/assets/img/us_flag_small.png"> -->
+    </span>
+    <span class="stage">This site is currently in <a href="https://18f.gsa.gov/dashboard/stages/#alpha">alpha</a>.</span>
+  </div>
+  <nav>
+    <a href="#" id="menu-btn">&#9776; MENU</a>
+    <div id="logo">
+      <a href="/" accesskey="1" title="Home" aria-label="Home">
+        <h1>{{ site.title }}</h1>
+      </a>
+    </div>
+    <ul class="usa-unstyled-list">
+      {% assign pages = site.pages | sort: 'nav' %}
+      {% for page in pages %}
+        {% if page.nav %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
