@@ -10,7 +10,7 @@ hero-button-text: 'Click me!'
 hero-button-link: 'https://18f.gsa.gov'
 ---
 
-# Featured post
+# Awesome Featured post
 
 New stuff for SBST
 
