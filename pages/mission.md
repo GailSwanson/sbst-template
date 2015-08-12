@@ -8,7 +8,9 @@ permalink: "/mission/"
 
 # Our Mission
 
-Yo!
+Built in the spirit of America's top tech startups, 18F is a team of top-notch designers, developers, and product specialists inside the [General Services Administration,](http://gsa.gov/) headquartered at 18 and F streets in Washington, D.C. 18F is a civic consultancy for the government, inside the government, enabling agencies to rapidly deploy tools and services that are easy to operate, cost efficient, and reusable.  
+
+We are transforming government from the inside out, creating cultural change by working with teams inside agencies who want to **create great services for the public.**
 
 ## Section 1
 
